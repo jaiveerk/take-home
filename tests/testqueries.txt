@@ -1,0 +1,21 @@
+curl -X GET localhost:5000/get/maintainers.email%20EQUALS%20firstmaintainer@hotmail.com
+curl -X GET localhost:5000/get/maintainers.email%20EQUALS%20firstmaintainer%20app1 <- tests search when no index
+curl -X GET localhost:5000/get/version%20GREATER_THAN_OR_EQUAL%200.0.1
+curl -X GET localhost:5000/get/version%20LESS_THAN%201.0.1     
+
+curl -X GET localhost:5000/get/version%20LESS_THAN_OR_EQUAL%201.0.1
+
+curl -X GET localhost:5000/get/version%20GREATER_THAN%201.0.1  
+
+
+curl -X GET localhost:5000/get/version%20CONTAINS%201.0.1   <- look for versions with 1.0.1 in it?? (update, yes)
+curl -X GET localhost:5000/get/title%20CONTAINS%20Kubernetes
+
+
+
+title equals?
+-------
+curl -X POST -F 'data=@tests/test.yaml' localhost:5000/upload &&
+curl -X POST -F 'data=@tests/test2.yaml' localhost:5000/upload &&
+curl -X POST -F 'data=@tests/test3.yaml' localhost:5000/upload &&
+curl -X POST -F 'data=@tests/test4.yaml' localhost:5000/upload

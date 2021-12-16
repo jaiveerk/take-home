@@ -1,0 +1,11 @@
+title: Valid App 3 python kubernetes
+version: 2.0.1
+maintainers:
+- name: AppTwo Maintainer
+  email: apptwo@hotmail.com
+company: Upbound Inc.
+website: https://upbound.io
+source: https://github.com/upbound/repo
+license: Apache-2.0
+description: |
+ this is the description for app 3 which is build with kubernetes! and also python.
