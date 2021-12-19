@@ -98,8 +98,8 @@ def custom_verify(input):
 
 def verify_title(input_dict):
     if not isinstance(input_dict['title'], str): # I hate checking if(boolean) return boolean, but wanted to include reason
-        return False, "Title must be a string"
-    return True, ""
+        return False, "Title must be a string" # so if title were made a list, that failure would happen here since it's a check that's based
+    return True, ""                            # on a characteristic of that field itself
 
 def verify_version(input_dict):
     for digit in input_dict['version'].split("."):
