@@ -18,21 +18,7 @@ class Storage:
         
 
         self.counter = self.counter + 1
-
-    
-    # def make_lowercase(self, input):
-    #     if isinstance(input, str):
-    #         return input.lower()
-        
-    #     elif isinstance(input, list):
-    #         return [self.make_lowercase(item) for item in input]
-
-    #     elif isinstance(input, dict):
-    #         print(input)
-    #         for entry in input:
-    #             input[entry] = self.make_lowercase(input[entry])
             
-
         return input
 
     def read(self, query):
