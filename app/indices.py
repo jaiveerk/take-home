@@ -64,7 +64,7 @@ class Index:
     
 
     def add_to_maintainers_index(self, input):
-        for object in input['maintainers']: # only be able to query by maintainer email --> doesn't make sense to query by name
+        for object in input['maintainers']: 
             email = object['email']
             if not email in self.maintainers_email_equals_index:
                 self.maintainers_email_equals_index[email] = []
